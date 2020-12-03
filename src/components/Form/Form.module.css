@@ -1,0 +1,14 @@
+.block__input{
+  width: 320px;
+  height: 35px;
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  padding-left: 10px;
+}
+.block__button{
+  background-color: #4997D0;
+  width: 335px;
+  height: 35px;
+  border: none;
+  color: #fff;
+}

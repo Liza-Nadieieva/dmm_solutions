@@ -1,0 +1,48 @@
+.modalOverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.modalWindow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  min-height: 450px;
+  overflow-y: scroll;
+  max-height: 500px;
+  width: 650px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 250px 1fr;
+}
+.modalPosts{
+  margin-left: 30px;
+  line-height: 30px;
+}
+.modalPosts span:first-child{
+  color: gray;
+}
+.icon_times{
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  color: darkgray;
+  cursor: pointer;
+}
+@media (max-width: 575px) {
+  .modalWindow{
+    width: 370px;
+    min-height: 500px;
+    grid-template-columns: 1fr;
+  }
+  .modalPosts{
+    margin: 0;
+  }
+}
